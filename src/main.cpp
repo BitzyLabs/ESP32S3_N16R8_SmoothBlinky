@@ -6,6 +6,7 @@
 #define NUM_LEDS    1
 #define BRIGHTNESS 128
 #define DELAY_MS    20
+#define INFO_DELAY 2000  // 2 seconds pause before LED effect
 
 Adafruit_NeoPixel strip(NUM_LEDS, LED_PIN, NEO_GRB + NEO_KHZ800);
 
@@ -48,7 +49,8 @@ void setup() {
   Serial.begin(115200);
   delay(100); // Give time for serial monitor to connect
 
-  printHardwareInfo(); // Print hardware info once at startup
+  printHardwareInfo(); // Print hardware info
+  delay(INFO_DELAY);   // Pause 2 seconds before starting LED effect
 
   strip.begin();
   strip.setBrightness(BRIGHTNESS);
