@@ -1,0 +1,6 @@
+{
+    "idf.currentSetup": "/home/bitzy/esp/v5.5.1/esp-idf",
+    "idf.port": "/dev/ttyACM0",
+    "stm32-for-vscode.openOCDPath": false,
+    "stm32-for-vscode.armToolchainPath": false
+}
