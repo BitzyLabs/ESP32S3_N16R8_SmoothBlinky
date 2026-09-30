@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "PIO Monitor (prints kit header)",
+      "type": "shell",
+      "command": "${workspaceFolder}/scripts/monitor_with_header.sh",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "PIO Upload & Monitor (prints kit header)",
+      "type": "shell",
+      "command": "${workspaceFolder}/scripts/monitor_with_header.sh --upload",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    }
+  ]
+}
