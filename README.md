@@ -35,9 +35,11 @@ This project demonstrates a **smooth rainbow and white blending effect** on the 
     fw v4.45`) - the bridge sits on the PC side of the USB link, so the
     firmware cannot query it. When built on Linux with the kit plugged in,
     `scripts/uart_bridge_info.py` reads the actual USB descriptor and
-    injects it as `UART_BRIDGE_USB_INFO`; on any other OS or build machine
-    the firmware falls back to the kit's shipping spec, so the line always
-    shows real data in every serial monitor.
+    injects it as `UART_BRIDGE_USB_INFO` - but only if the device is the
+    kit's own bridge (`1A86:55D3`), so an unrelated serial dongle on the
+    build machine can never mislabel a kit. On Windows/macOS, or whenever
+    the kit is not plugged in during the build, the firmware falls back to
+    the kit's shipping spec, so the line is correct on every OS.
 - **Header recall**: press **Enter** in any serial monitor and the full
   greeting + static block is reprinted instantly - useful when you attach
   the monitor after boot (most monitors do not reset the board on connect).
