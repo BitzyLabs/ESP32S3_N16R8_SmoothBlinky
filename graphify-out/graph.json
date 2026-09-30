@@ -313,19 +313,43 @@
       "file_type": "code",
       "norm_label": "bcd_version()",
       "source_file": "scripts/uart_bridge_info.py",
-      "source_location": "L68"
+      "source_location": "L80"
     },
     {
-      "id": "scripts_uart_bridge_info_find_port",
-      "label": "find_port()",
+      "id": "scripts_uart_bridge_info_candidate_ports",
+      "label": "candidate_ports()",
       "_callable": true,
       "_origin": "ast",
       "community": 7,
       "community_name": "uart_bridge_info.py",
       "file_type": "code",
-      "norm_label": "find_port()",
+      "norm_label": "candidate_ports()",
       "source_file": "scripts/uart_bridge_info.py",
-      "source_location": "L30"
+      "source_location": "L43"
+    },
+    {
+      "id": "scripts_uart_bridge_info_detect_and_inject",
+      "label": "detect_and_inject()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "uart_bridge_info.py",
+      "file_type": "code",
+      "norm_label": "detect_and_inject()",
+      "source_file": "scripts/uart_bridge_info.py",
+      "source_location": "L104"
+    },
+    {
+      "id": "scripts_uart_bridge_info_find_kit_bridge",
+      "label": "find_kit_bridge()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "uart_bridge_info.py",
+      "file_type": "code",
+      "norm_label": "find_kit_bridge()",
+      "source_file": "scripts/uart_bridge_info.py",
+      "source_location": "L92"
     },
     {
       "id": "scripts_uart_bridge_info_usb_descriptor",
@@ -337,7 +361,7 @@
       "file_type": "code",
       "norm_label": "usb_descriptor()",
       "source_file": "scripts/uart_bridge_info.py",
-      "source_location": "L42"
+      "source_location": "L54"
     },
     {
       "id": "scripts_uart_bridge_info_usb_descriptor_read",
@@ -349,7 +373,7 @@
       "file_type": "code",
       "norm_label": "read()",
       "source_file": "scripts/uart_bridge_info.py",
-      "source_location": "L51"
+      "source_location": "L63"
     },
     {
       "id": "opencode_plugins_graphify_graphifyplugin",
@@ -397,18 +421,18 @@
       "source_location": "L1"
     },
     {
-      "id": "scripts_uart_bridge_info_rationale_31",
-      "label": "Upload port if configured, otherwise first USB serial device.",
+      "id": "scripts_uart_bridge_info_rationale_44",
+      "label": "Upload port if configured, otherwise every USB serial device.",
       "_origin": "ast",
       "community": 7,
       "community_name": "uart_bridge_info.py",
       "file_type": "rationale",
-      "norm_label": "upload port if configured, otherwise first usb serial device.",
+      "norm_label": "upload port if configured, otherwise every usb serial device.",
       "source_file": "scripts/uart_bridge_info.py",
-      "source_location": "L31"
+      "source_location": "L44"
     },
     {
-      "id": "scripts_uart_bridge_info_rationale_43",
+      "id": "scripts_uart_bridge_info_rationale_55",
       "label": "Walk from the tty node up to its USB device directory in sysfs.",
       "_origin": "ast",
       "community": 7,
@@ -416,10 +440,10 @@
       "file_type": "rationale",
       "norm_label": "walk from the tty node up to its usb device directory in sysfs.",
       "source_file": "scripts/uart_bridge_info.py",
-      "source_location": "L43"
+      "source_location": "L55"
     },
     {
-      "id": "scripts_uart_bridge_info_rationale_69",
+      "id": "scripts_uart_bridge_info_rationale_81",
       "label": "Decode a raw-hex bcdDevice ('0445') into a version string ('4.45').",
       "_origin": "ast",
       "community": 7,
@@ -427,7 +451,18 @@
       "file_type": "rationale",
       "norm_label": "decode a raw-hex bcddevice ('0445') into a version string ('4.45').",
       "source_file": "scripts/uart_bridge_info.py",
-      "source_location": "L69"
+      "source_location": "L81"
+    },
+    {
+      "id": "scripts_uart_bridge_info_rationale_93",
+      "label": "First plugged device that is the kit's bridge chip (never a stranger).",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "uart_bridge_info.py",
+      "file_type": "rationale",
+      "norm_label": "first plugged device that is the kit's bridge chip (never a stranger).",
+      "source_file": "scripts/uart_bridge_info.py",
+      "source_location": "L93"
     },
     {
       "id": "opencode_plugins_graphify",
@@ -1560,6 +1595,54 @@
   ],
   "links": [
     {
+      "source": "scripts_uart_bridge_info_detect_and_inject",
+      "target": "scripts_uart_bridge_info_find_kit_bridge",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "scripts/uart_bridge_info.py",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_uart_bridge_info_detect_and_inject",
+      "target": "scripts_uart_bridge_info_bcd_version",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "scripts/uart_bridge_info.py",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_uart_bridge_info_find_kit_bridge",
+      "target": "scripts_uart_bridge_info_candidate_ports",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "scripts/uart_bridge_info.py",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_uart_bridge_info_find_kit_bridge",
+      "target": "scripts_uart_bridge_info_usb_descriptor",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "scripts/uart_bridge_info.py",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
       "source": "src_main_handleserialrecall",
       "target": "src_main_printbootbanner",
       "relation": "calls",
@@ -1664,7 +1747,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/uart_bridge_info.py",
-      "source_location": "L51",
+      "source_location": "L63",
       "weight": 1.0
     },
     {
@@ -1676,7 +1759,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "scripts/uart_bridge_info.py",
-      "source_location": "L12",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -1688,7 +1771,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "scripts/uart_bridge_info.py",
-      "source_location": "L13",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -1799,13 +1882,24 @@
     },
     {
       "source": "scripts_uart_bridge_info",
-      "target": "scripts_uart_bridge_info_find_port",
+      "target": "scripts_uart_bridge_info_detect_and_inject",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/uart_bridge_info.py",
-      "source_location": "L30",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_uart_bridge_info",
+      "target": "scripts_uart_bridge_info_candidate_ports",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/uart_bridge_info.py",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -1816,7 +1910,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/uart_bridge_info.py",
-      "source_location": "L42",
+      "source_location": "L54",
       "weight": 1.0
     },
     {
@@ -1827,7 +1921,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/uart_bridge_info.py",
-      "source_location": "L68",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_uart_bridge_info",
+      "target": "scripts_uart_bridge_info_find_kit_bridge",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/uart_bridge_info.py",
+      "source_location": "L92",
       "weight": 1.0
     },
     {
@@ -1952,36 +2057,47 @@
       "weight": 1.0
     },
     {
-      "source": "scripts_uart_bridge_info_rationale_31",
-      "target": "scripts_uart_bridge_info_find_port",
+      "source": "scripts_uart_bridge_info_rationale_44",
+      "target": "scripts_uart_bridge_info_candidate_ports",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/uart_bridge_info.py",
-      "source_location": "L31",
+      "source_location": "L44",
       "weight": 1.0
     },
     {
-      "source": "scripts_uart_bridge_info_rationale_43",
+      "source": "scripts_uart_bridge_info_rationale_55",
       "target": "scripts_uart_bridge_info_usb_descriptor",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/uart_bridge_info.py",
-      "source_location": "L43",
+      "source_location": "L55",
       "weight": 1.0
     },
     {
-      "source": "scripts_uart_bridge_info_rationale_69",
+      "source": "scripts_uart_bridge_info_rationale_81",
       "target": "scripts_uart_bridge_info_bcd_version",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/uart_bridge_info.py",
-      "source_location": "L69",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_uart_bridge_info_rationale_93",
+      "target": "scripts_uart_bridge_info_find_kit_bridge",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/uart_bridge_info.py",
+      "source_location": "L93",
       "weight": 1.0
     },
     {
@@ -3004,5 +3120,5 @@
       "source_file": ".opencode/skills/graphify/SKILL.md"
     }
   ],
-  "built_at_commit": "23a31f0a635726b969263907cadc09128af548e8"
+  "built_at_commit": "68b1af4626410b63687a69f6cfb824ef186a848c"
 }

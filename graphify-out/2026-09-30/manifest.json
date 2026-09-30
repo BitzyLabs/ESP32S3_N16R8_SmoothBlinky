@@ -12,8 +12,8 @@
     "semantic_hash": "3ea725724bc8ebe483c9f13d6aa1124f"
   },
   ".vscode/extensions.json": {
-    "mtime": 1790741855.9971154,
-    "seen": 1790741903.347797,
+    "mtime": 1790747421.7998803,
+    "seen": 1790748171.3589427,
     "ast_hash": "271e65ec0f2fcc8a13ad8bda72704cff",
     "semantic_hash": "271e65ec0f2fcc8a13ad8bda72704cff"
   },
@@ -24,9 +24,9 @@
     "semantic_hash": "b747f9e83989b8d03e657224e91bd9bf"
   },
   "src/main.cpp": {
-    "mtime": 1790741854.3193157,
-    "seen": 1790741903.3478036,
-    "ast_hash": "ddf1244e18a387d16f4b440b643baec1",
+    "mtime": 1790742925.2304122,
+    "seen": 1790743195.4623497,
+    "ast_hash": "45020a3591ffbb4792c034484aecd81e",
     "semantic_hash": ""
   },
   ".opencode/skills/graphify/SKILL.md": {
@@ -90,15 +90,27 @@
     "semantic_hash": "6a47d64fcc136324ca395065a707ef76"
   },
   "README.md": {
-    "mtime": 1790741894.3170607,
-    "seen": 1790741903.3478212,
-    "ast_hash": "0de2fbe6b29a0d0fabefbf6d6f842c46",
+    "mtime": 1790747746.1032073,
+    "seen": 1790748171.3589683,
+    "ast_hash": "d86b7e14cd5023edc8a52b11570b1565",
     "semantic_hash": ""
   },
   "scripts/uart_bridge_info.py": {
     "mtime": 1790741843.865205,
     "seen": 1790741903.347802,
     "ast_hash": "aeb559deb9921e125ef5253e30728d50",
+    "semantic_hash": ""
+  },
+  ".vscode/tasks.json": {
+    "mtime": 1790747709.290695,
+    "seen": 1790748171.3589466,
+    "ast_hash": "f63397cd4f14e4866eaa1d85c1783a59",
+    "semantic_hash": ""
+  },
+  "scripts/monitor_with_header.sh": {
+    "mtime": 1790747709.290695,
+    "seen": 1790748171.3589485,
+    "ast_hash": "fb0343c81c82c3e18077d6eb243b4a85",
     "semantic_hash": ""
   }
 }

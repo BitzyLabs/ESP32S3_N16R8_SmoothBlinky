@@ -1,12 +1,12 @@
 # Graph Report - ESP32S3_N16R8_SmoothBlinky  (2026-09-30)
 
 ## Corpus Check
-- 17 files · ~13,632 words
+- 19 files · ~14,432 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 6 file(s) not represented in the graph (top: (none) 5, .ini 1)
 
 ## Summary
-- 93 nodes · 121 edges · 9 communities (8 shown, 1 thin omitted)
+- 96 nodes · 125 edges · 10 communities (8 shown, 2 thin omitted)
 - Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 12 edges (avg confidence: 0.84)
 - Token cost: 0 input · 0 output
 
@@ -20,10 +20,11 @@
 - Core Extraction Pipeline
 - LED Rainbow Animation
 - Graph Query Commands
-- main.cpp Firmware Code
+- main.cpp
 - Extraction Rules & Audit
 - Extra Exports and Benchmark Reference
 - uart_bridge_info.py
+- monitor_with_header.sh
 
 ## God Nodes (most connected - your core abstractions)
 1. `Query, Path, Explain Reference` - 11 edges
@@ -57,7 +58,7 @@
 - **Graph Query, Traversal and Feedback Flow** — _opencode_skills_graphify_references_query_vocab_expansion, _opencode_skills_graphify_references_query_bfs_traversal, _opencode_skills_graphify_references_query_dfs_traversal, _opencode_skills_graphify_references_query_networkx_fallback, _opencode_skills_graphify_references_query_path_command, _opencode_skills_graphify_references_query_explain_command, _opencode_skills_graphify_references_query_save_result, _opencode_skills_graphify_references_query_reflect_lessons [EXTRACTED 1.00]
 - **Step 3 Part B Semantic Extraction Pipeline** — _opencode_skills_graphify_skill_semantic_extraction, _opencode_skills_graphify_skill_subagent_chunk_dispatch, _opencode_skills_graphify_skill_semantic_cache, _opencode_skills_graphify_skill_gemini_backend, _opencode_skills_graphify_references_extraction_spec_reference [EXTRACTED 1.00]
 
-## Communities (9 total, 1 thin omitted)
+## Communities (10 total, 2 thin omitted)
 
 ### Community 0 - "Update & Hook Workflows"
 Cohesion: 0.22
@@ -75,9 +76,9 @@ Nodes (10): Gamma Correction for Perceptual Brightness, Hardware Information Ser
 Cohesion: 0.28
 Nodes (9): BFS Graph Query Traversal, DFS Graph Query Traversal, graphify explain (Node Explanation), Inline NetworkX Traversal Fallback, graphify path (Shortest Path Query), Query, Path, Explain Reference, Reflect / LESSONS.md Work Memory, save-result Feedback Loop (+1 more)
 
-### Community 4 - "main.cpp Firmware Code"
+### Community 4 - "main.cpp"
 Cohesion: 0.21
-Nodes (8): gamma8(), hsvToRgb(), hueName(), loop(), printBootBanner(), printHardwareInfo(), printLiveFeed(), setup()
+Nodes (9): gamma8(), handleSerialRecall(), hsvToRgb(), hueName(), loop(), printBootBanner(), printHardwareInfo(), printLiveFeed() (+1 more)
 
 ### Community 5 - "Extraction Rules & Audit"
 Cohesion: 0.36
@@ -92,18 +93,18 @@ Cohesion: 0.18
 Nodes (3): bcd_version(), find_port(), usb_descriptor()
 
 ## Knowledge Gaps
-- **20 isolated node(s):** `Gamma Correction for Perceptual Brightness`, `HSV to RGB Color Conversion`, `Adafruit NeoPixel Library`, `Sine Wave White Blending`, `Cluster-Only Refresh` (+15 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 36 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **21 isolated node(s):** `monitor_with_header.sh script`, `Gamma Correction for Perceptual Brightness`, `HSV to RGB Color Conversion`, `Adafruit NeoPixel Library`, `Sine Wave White Blending` (+16 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 38 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `graphify Skill (/graphify)` connect `Extraction Rules & Audit` to `Update & Hook Workflows`, `Core Extraction Pipeline`, `Graph Query Commands`, `Extra Exports and Benchmark Reference`?**
-  _High betweenness centrality (0.190) - this node is a cross-community bridge._
+  _High betweenness centrality (0.178) - this node is a cross-community bridge._
 - **Why does `Query, Path, Explain Reference` connect `Graph Query Commands` to `Update & Hook Workflows`, `Extraction Rules & Audit`, `Extra Exports and Benchmark Reference`?**
-  _High betweenness centrality (0.097) - this node is a cross-community bridge._
+  _High betweenness centrality (0.091) - this node is a cross-community bridge._
 - **Why does `Extra Exports and Benchmark Reference` connect `Extra Exports and Benchmark Reference` to `Extraction Rules & Audit`?**
-  _High betweenness centrality (0.062) - this node is a cross-community bridge._
-- **What connects `Gamma Correction for Perceptual Brightness`, `HSV to RGB Color Conversion`, `Adafruit NeoPixel Library` to the rest of the system?**
-  _20 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.058) - this node is a cross-community bridge._
+- **What connects `monitor_with_header.sh script`, `Gamma Correction for Perceptual Brightness`, `HSV to RGB Color Conversion` to the rest of the system?**
+  _21 weakly-connected nodes found - possible documentation gaps or missing edges._

@@ -61,11 +61,45 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "main.cpp Firmware Code",
+      "community_name": "main.cpp",
       "file_type": "code",
       "norm_label": "gamma8()",
       "source_file": "src/main.cpp",
-      "source_location": "L36"
+      "source_location": "L39"
+    },
+    {
+      "id": "src_main_handleserialrecall",
+      "label": "handleSerialRecall()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "main.cpp",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "available",
+            "receiver_type": "Serial",
+            "lang": "cpp",
+            "line": "L206"
+          },
+          {
+            "callee": "read",
+            "receiver_type": "Serial",
+            "lang": "cpp",
+            "line": "L207"
+          },
+          {
+            "callee": "println",
+            "receiver_type": "Serial",
+            "lang": "cpp",
+            "line": "L212"
+          }
+        ]
+      },
+      "norm_label": "handleserialrecall()",
+      "source_file": "src/main.cpp",
+      "source_location": "L204"
     },
     {
       "id": "src_main_hsvtorgb",
@@ -73,11 +107,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "main.cpp Firmware Code",
+      "community_name": "main.cpp",
       "file_type": "code",
       "norm_label": "hsvtorgb()",
       "source_file": "src/main.cpp",
-      "source_location": "L40"
+      "source_location": "L43"
     },
     {
       "id": "src_main_huename",
@@ -85,11 +119,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "main.cpp Firmware Code",
+      "community_name": "main.cpp",
       "file_type": "code",
       "norm_label": "huename()",
       "source_file": "src/main.cpp",
-      "source_location": "L62"
+      "source_location": "L65"
     },
     {
       "id": "src_main_loop",
@@ -97,11 +131,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "main.cpp Firmware Code",
+      "community_name": "main.cpp",
       "file_type": "code",
       "norm_label": "loop()",
       "source_file": "src/main.cpp",
-      "source_location": "L223"
+      "source_location": "L249"
     },
     {
       "id": "src_main_printbootbanner",
@@ -109,7 +143,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "main.cpp Firmware Code",
+      "community_name": "main.cpp",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -117,13 +151,13 @@
             "callee": "println",
             "receiver_type": "Serial",
             "lang": "cpp",
-            "line": "L187"
+            "line": "L193"
           }
         ]
       },
       "norm_label": "printbootbanner()",
       "source_file": "src/main.cpp",
-      "source_location": "L186"
+      "source_location": "L192"
     },
     {
       "id": "src_main_printhardwareinfo",
@@ -131,7 +165,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "main.cpp Firmware Code",
+      "community_name": "main.cpp",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -139,73 +173,73 @@
             "callee": "getFlashChipSize",
             "receiver_type": "ESP",
             "lang": "cpp",
-            "line": "L80"
+            "line": "L83"
           },
           {
             "callee": "println",
             "receiver_type": "Serial",
             "lang": "cpp",
-            "line": "L91"
+            "line": "L94"
           },
           {
             "callee": "print",
             "receiver_type": "Serial",
             "lang": "cpp",
-            "line": "L92"
+            "line": "L95"
           },
           {
             "callee": "getChipModel",
             "receiver_type": "ESP",
             "lang": "cpp",
-            "line": "L93"
+            "line": "L96"
           },
           {
             "callee": "getChipRevision",
             "receiver_type": "ESP",
             "lang": "cpp",
-            "line": "L96"
+            "line": "L99"
           },
           {
             "callee": "getChipCores",
             "receiver_type": "ESP",
             "lang": "cpp",
-            "line": "L100"
+            "line": "L103"
           },
           {
             "callee": "getCpuFreqMHz",
             "receiver_type": "ESP",
             "lang": "cpp",
-            "line": "L103"
+            "line": "L106"
           },
           {
             "callee": "getFlashChipSpeed",
             "receiver_type": "ESP",
             "lang": "cpp",
-            "line": "L111"
+            "line": "L114"
           },
           {
             "callee": "printf",
             "receiver_type": "Serial",
             "lang": "cpp",
-            "line": "L143"
+            "line": "L146"
           },
           {
             "callee": "baudRate",
             "receiver_type": "Serial",
             "lang": "cpp",
-            "line": "L150"
+            "line": "L153"
           },
           {
             "callee": "getFreeHeap",
             "receiver_type": "ESP",
             "lang": "cpp",
-            "line": "L169"
+            "line": "L175"
           }
         ]
       },
       "norm_label": "printhardwareinfo()",
       "source_file": "src/main.cpp",
-      "source_location": "L79"
+      "source_location": "L82"
     },
     {
       "id": "src_main_printlivefeed",
@@ -213,7 +247,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "main.cpp Firmware Code",
+      "community_name": "main.cpp",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -221,19 +255,19 @@
             "callee": "print",
             "receiver_type": "Serial",
             "lang": "cpp",
-            "line": "L202"
+            "line": "L227"
           },
           {
             "callee": "println",
             "receiver_type": "Serial",
             "lang": "cpp",
-            "line": "L207"
+            "line": "L232"
           }
         ]
       },
       "norm_label": "printlivefeed()",
       "source_file": "src/main.cpp",
-      "source_location": "L193"
+      "source_location": "L218"
     },
     {
       "id": "src_main_setup",
@@ -241,7 +275,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "main.cpp Firmware Code",
+      "community_name": "main.cpp",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -249,13 +283,25 @@
             "callee": "begin",
             "receiver_type": "Serial",
             "lang": "cpp",
-            "line": "L212"
+            "line": "L237"
+          },
+          {
+            "callee": "available",
+            "receiver_type": "Serial",
+            "lang": "cpp",
+            "line": "L240"
+          },
+          {
+            "callee": "read",
+            "receiver_type": "Serial",
+            "lang": "cpp",
+            "line": "L240"
           }
         ]
       },
       "norm_label": "setup()",
       "source_file": "src/main.cpp",
-      "source_location": "L211"
+      "source_location": "L236"
     },
     {
       "id": "scripts_uart_bridge_info_bcd_version",
@@ -322,7 +368,7 @@
       "label": "main.cpp",
       "_origin": "ast",
       "community": 4,
-      "community_name": "main.cpp Firmware Code",
+      "community_name": "main.cpp",
       "file_type": "code",
       "norm_label": "main.cpp",
       "source_file": "src/main.cpp",
@@ -404,6 +450,36 @@
       "norm_label": "important: keep the reminder string free of backticks and $(...) constructs.",
       "source_file": ".opencode/plugins/graphify.js",
       "source_location": "L4"
+    },
+    {
+      "id": "scripts_monitor_with_header",
+      "label": "monitor_with_header.sh",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "monitor_with_header.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "monitor_with_header.sh",
+      "source_file": "scripts/monitor_with_header.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_monitor_with_header_sh__entry",
+      "label": "monitor_with_header.sh script",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "monitor_with_header.sh",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "monitor_with_header.sh script",
+      "source_file": "scripts/monitor_with_header.sh",
+      "source_location": "L1"
     },
     {
       "id": "readme_gamma_correction",
@@ -1378,7 +1454,7 @@
       "label": "adafruit_neopixel",
       "_origin": "semantic",
       "community": 4,
-      "community_name": "main.cpp Firmware Code",
+      "community_name": "main.cpp",
       "external": true,
       "file_type": "concept",
       "norm_label": "adafruit_neopixel",
@@ -1390,7 +1466,7 @@
       "label": "arduino",
       "_origin": "semantic",
       "community": 4,
-      "community_name": "main.cpp Firmware Code",
+      "community_name": "main.cpp",
       "external": true,
       "file_type": "concept",
       "norm_label": "arduino",
@@ -1402,7 +1478,7 @@
       "label": "esp_heap_caps",
       "_origin": "semantic",
       "community": 4,
-      "community_name": "main.cpp Firmware Code",
+      "community_name": "main.cpp",
       "external": true,
       "file_type": "concept",
       "norm_label": "esp_heap_caps",
@@ -1414,7 +1490,7 @@
       "label": "esp_mac",
       "_origin": "semantic",
       "community": 4,
-      "community_name": "main.cpp Firmware Code",
+      "community_name": "main.cpp",
       "external": true,
       "file_type": "concept",
       "norm_label": "esp_mac",
@@ -1426,10 +1502,34 @@
       "label": "math",
       "_origin": "semantic",
       "community": 4,
-      "community_name": "main.cpp Firmware Code",
+      "community_name": "main.cpp",
       "external": true,
       "file_type": "concept",
       "norm_label": "math",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "glob",
+      "label": "glob",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "uart_bridge_info.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "glob",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "os",
+      "label": "os",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "uart_bridge_info.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "os",
       "source_file": "",
       "type": "external"
     },
@@ -1456,31 +1556,21 @@
       "norm_label": "ref_path",
       "source_file": "",
       "type": "external"
-    },
-    {
-      "id": "glob",
-      "label": "glob",
-      "community": 7,
-      "community_name": "uart_bridge_info.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "glob",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "os",
-      "label": "os",
-      "community": 7,
-      "community_name": "uart_bridge_info.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "os",
-      "source_file": "",
-      "type": "external"
     }
   ],
   "links": [
+    {
+      "source": "src_main_handleserialrecall",
+      "target": "src_main_printbootbanner",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/main.cpp",
+      "source_location": "L213",
+      "weight": 1.0
+    },
     {
       "source": "src_main_hsvtorgb",
       "target": "src_main_gamma8",
@@ -1490,7 +1580,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/main.cpp",
-      "source_location": "L56",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_loop",
+      "target": "src_main_handleserialrecall",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/main.cpp",
+      "source_location": "L254",
       "weight": 1.0
     },
     {
@@ -1502,7 +1604,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/main.cpp",
-      "source_location": "L229",
+      "source_location": "L257",
       "weight": 1.0
     },
     {
@@ -1514,7 +1616,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/main.cpp",
-      "source_location": "L245",
+      "source_location": "L273",
       "weight": 1.0
     },
     {
@@ -1526,7 +1628,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/main.cpp",
-      "source_location": "L190",
+      "source_location": "L196",
       "weight": 1.0
     },
     {
@@ -1538,7 +1640,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/main.cpp",
-      "source_location": "L201",
+      "source_location": "L226",
       "weight": 1.0
     },
     {
@@ -1550,7 +1652,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/main.cpp",
-      "source_location": "L215",
+      "source_location": "L241",
       "weight": 1.0
     },
     {
@@ -1685,6 +1787,17 @@
       "weight": 1.0
     },
     {
+      "source": "scripts_monitor_with_header",
+      "target": "scripts_monitor_with_header_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/monitor_with_header.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
       "source": "scripts_uart_bridge_info",
       "target": "scripts_uart_bridge_info_find_port",
       "relation": "contains",
@@ -1725,7 +1838,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.cpp",
-      "source_location": "L186",
+      "source_location": "L192",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main",
+      "target": "src_main_handleserialrecall",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.cpp",
+      "source_location": "L204",
       "weight": 1.0
     },
     {
@@ -1736,7 +1860,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.cpp",
-      "source_location": "L193",
+      "source_location": "L218",
       "weight": 1.0
     },
     {
@@ -1747,7 +1871,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.cpp",
-      "source_location": "L211",
+      "source_location": "L236",
       "weight": 1.0
     },
     {
@@ -1758,7 +1882,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.cpp",
-      "source_location": "L223",
+      "source_location": "L249",
       "weight": 1.0
     },
     {
@@ -1769,7 +1893,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.cpp",
-      "source_location": "L36",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -1780,7 +1904,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.cpp",
-      "source_location": "L40",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -1791,7 +1915,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.cpp",
-      "source_location": "L62",
+      "source_location": "L65",
       "weight": 1.0
     },
     {
@@ -1802,7 +1926,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.cpp",
-      "source_location": "L79",
+      "source_location": "L82",
       "weight": 1.0
     },
     {

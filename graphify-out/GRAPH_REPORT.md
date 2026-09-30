@@ -1,17 +1,17 @@
 # Graph Report - ESP32S3_N16R8_SmoothBlinky  (2026-09-30)
 
 ## Corpus Check
-- 19 files · ~14,432 words
+- 19 files · ~14,765 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 6 file(s) not represented in the graph (top: (none) 5, .ini 1)
 
 ## Summary
-- 96 nodes · 125 edges · 10 communities (8 shown, 2 thin omitted)
-- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 12 edges (avg confidence: 0.84)
+- 99 nodes · 132 edges · 10 communities (8 shown, 2 thin omitted)
+- Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 12 edges (avg confidence: 0.84)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `23a31f0a`
+- Built from commit: `68b1af46`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -34,9 +34,9 @@
 5. `Incremental Update and Cluster-Only Reference` - 6 edges
 6. `Semantic LLM Extraction (Part B)` - 6 edges
 7. `Graph Outputs (graph.html, graph.json, GRAPH_REPORT.md)` - 6 edges
-8. `Smooth Rainbow + White LED Effect` - 5 edges
-9. `Structural AST Extraction (Part A)` - 5 edges
-10. `Graphify Build Pipeline (Steps 0-9)` - 5 edges
+8. `find_kit_bridge()` - 5 edges
+9. `Smooth Rainbow + White LED Effect` - 5 edges
+10. `Structural AST Extraction (Part A)` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Native CLAUDE.md Integration` --semantically_similar_to--> `AGENTS.md graphify Rules`  [INFERRED] [semantically similar]
@@ -89,22 +89,22 @@ Cohesion: 0.17
 Nodes (13): FalkorDB Export (--falkordb), MCP Graph Server (graphify.serve), Neo4j Export (--neo4j), Extra Exports and Benchmark Reference, Token Reduction Benchmark, SVG and GraphML Exports, Wiki Export (--wiki), GitHub Repo Clone (graphify clone) (+5 more)
 
 ### Community 7 - "uart_bridge_info.py"
-Cohesion: 0.18
-Nodes (3): bcd_version(), find_port(), usb_descriptor()
+Cohesion: 0.19
+Nodes (5): bcd_version(), candidate_ports(), detect_and_inject(), find_kit_bridge(), usb_descriptor()
 
 ## Knowledge Gaps
 - **21 isolated node(s):** `monitor_with_header.sh script`, `Gamma Correction for Perceptual Brightness`, `HSV to RGB Color Conversion`, `Adafruit NeoPixel Library`, `Sine Wave White Blending` (+16 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 38 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 39 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `graphify Skill (/graphify)` connect `Extraction Rules & Audit` to `Update & Hook Workflows`, `Core Extraction Pipeline`, `Graph Query Commands`, `Extra Exports and Benchmark Reference`?**
-  _High betweenness centrality (0.178) - this node is a cross-community bridge._
+  _High betweenness centrality (0.168) - this node is a cross-community bridge._
 - **Why does `Query, Path, Explain Reference` connect `Graph Query Commands` to `Update & Hook Workflows`, `Extraction Rules & Audit`, `Extra Exports and Benchmark Reference`?**
-  _High betweenness centrality (0.091) - this node is a cross-community bridge._
+  _High betweenness centrality (0.085) - this node is a cross-community bridge._
 - **Why does `Extra Exports and Benchmark Reference` connect `Extra Exports and Benchmark Reference` to `Extraction Rules & Audit`?**
-  _High betweenness centrality (0.058) - this node is a cross-community bridge._
+  _High betweenness centrality (0.055) - this node is a cross-community bridge._
 - **What connects `monitor_with_header.sh script`, `Gamma Correction for Perceptual Brightness`, `HSV to RGB Color Conversion` to the rest of the system?**
   _21 weakly-connected nodes found - possible documentation gaps or missing edges._
