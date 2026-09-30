@@ -13,8 +13,8 @@
 #define LED_PIN     48
 #define NUM_LEDS    1
 #define BRIGHTNESS  128
-#define DELAY_MS    20
-#define INFO_DELAY  2000  // 2 seconds pause before LED effect
+#define DELAY_MS    80
+#define INFO_DELAY  1600  // 2 seconds pause before LED effect
 
 // ---------------------------------------------------------------------------
 // Serial output layout:
